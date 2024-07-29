@@ -46,13 +46,23 @@ if(app_mode=="Home"):
 elif(app_mode=="About"):
     st.header("About")
     st.markdown("""
+                #### About the CNN Model
+                A Convolutional Neural Network (CNN) is a deep learning algorithm designed for image recognition and classification tasks. CNNs are particularly effective in capturing spatial hierarchies in images through their convolutional layers, which apply various filters to the input data to detect patterns such as edges, textures, and shapes.
+                
+                In this project, the CNN model is trained to classify tomato leaves into 10 different categories, including both healthy and diseased states. By using a CNN, the model can accurately identify diseases from images, providing a valuable tool for early disease detection and management in agriculture.
+                
                 #### About Dataset
-                This dataset is recreated using offline augmentation from the original dataset.The original dataset can be found on this github repo.
-                This dataset consists of 22,930 rgb images of healthy and diseased tomato leaves which is categorized into 10 different classes. The total dataset is divided into an 80/20 ratio of training and validation sets, with the training set consisting of 18,345 images (80%) and the validation set consisting of 4,585 images (20%) preserving the directory structure.
-                A new directory containing 16 test images is created later for prediction purpose.
+                This dataset was generated through offline augmentation from the original dataset, which is available on this GitHub repo. It comprises 26,503 RGB images of healthy and diseased tomato leaves, categorized into 10 classes. The dataset is split 80/20 into training and validation sets, with 21,043 images (80%) for training and 5,460 images (20%) for validation, maintaining the directory structure.
+
+                The dataset combines two sources:
+                Kaggle: https://www.kaggle.com/datasets/kaustubhb999/tomatoleaf/data
+                Kaggle: https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset/data
+                
+                A separate directory with 16 test images was created for prediction purposes.
+                
                 #### Content
-                1. train (18345 images)
-                2. validation (4585 images)
+                1. train (21,043 images)
+                2. validation (5,460 images)
                 3. test (16 images)
                 """)
     
